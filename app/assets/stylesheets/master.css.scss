@@ -18,8 +18,42 @@
    color: white; /*Change active text color here*/
     }
 
-.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { color: white;}
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { 
+color: white;
+}
 
 .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
 color: white;
 }
+
+.hero {
+  background: image_url('tz-clock.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+margin: 0; 
+}
+
+.frosty { 
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.frosty h1 {
+font-family: “Helvetica Neue”, Helvetica;
+font-weight: 100;
+text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.frosty h2 {
+font-family: “Helvetica Neue”, Helvetica;
+font-weight: 200;
+text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
