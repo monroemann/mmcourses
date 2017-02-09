@@ -57,3 +57,6 @@ end
 
 # Add the Simple Form gem
 gem 'simple_form'
+
+# Add the Devise gem
+gem 'devise', '>= 3.2.4'

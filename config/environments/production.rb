@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  #Adjusting host to match Heroku production host
+  config.action_mailer.default_url_options = { host: 'mmcourses.herokuapp.com' }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
