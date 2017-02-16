@@ -4,6 +4,15 @@
   <br>
   <%= link_to 'Preview As Student...', course_path(@course), class: 'btn btn-warning float-right' %>
   <br class="clr" />
+
+    <ul>
+    <% @course.sections.each do |section| %>
+      <li>
+        <%= section.title %>
+      </li>
+    <% end %>
+  </ul>
+
 </div>
 
 
