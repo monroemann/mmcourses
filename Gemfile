@@ -63,3 +63,7 @@ gem 'devise', '>= 3.2.4'
 
 # Add Carrierwave gem
 gem 'carrierwave', '~> 1.0'
+
+# Add Image_Magick
+gem "mini_magick"
+
