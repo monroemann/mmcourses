@@ -22,6 +22,11 @@ class Instructor::CoursesController < ApplicationController
 
 private
 
+  helper_method :current_course
+  def current_course
+    @current_course ||= Course.find(params[:id])
+  end
+
   def course_params
     params.require(:course).permit(:title, :description, :cost)
   end
@@ -31,6 +36,8 @@ private
       render text: "Unauthorized", status: :unauthorized
     end
   end
+
+
 
 
 end
