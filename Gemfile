@@ -67,3 +67,8 @@ gem 'carrierwave', '~> 1.0'
 # Add Image_Magick
 gem "mini_magick"
 
+# Add the Figaro gem
+gem "figaro", "<= 1.0.0"
+
+#Adding the Fog gem
+gem "fog"
