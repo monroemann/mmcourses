@@ -5,5 +5,6 @@ class CreateSections < ActiveRecord::Migration[5.0]
       t.integer :course_id
       t.timestamps
     end
+    add_index :sections, :course_id
   end
 end
