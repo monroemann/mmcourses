@@ -1,5 +1,10 @@
 # config/initializers/carrierwave.rb
 
+if Rails.env.development?
+  config.cache_dir = '/home/vagrant/uploads_tmp/tmp/uploads'
+  config.root = '/home/vagrant/uploads_tmp/tmp'
+end
+
 #CarrierWave.configure do |config|
 #  config.fog_credentials = {
 #    :provider               => 'AWS',                        # required
@@ -20,3 +25,6 @@ CarrierWave.configure do |config|
       region:            ENV["AWS_REGION"]
   }
 end
+
+
+
