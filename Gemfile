@@ -72,3 +72,6 @@ gem "figaro", "<= 1.0.0"
 
 #Adding the Fog gem
 gem "fog"
+
+#Adding the carrierwave gem
+gem 'carrierwave-aws'
