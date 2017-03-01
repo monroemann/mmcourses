@@ -75,3 +75,6 @@ gem "fog"
 
 #Adding the carrierwave gem
 gem 'carrierwave-aws'
+
+#Adding the payment processor Stripe gem
+gem 'stripe'
