@@ -78,3 +78,6 @@ gem 'carrierwave-aws'
 
 #Adding the payment processor Stripe gem
 gem 'stripe'
+
+#Adding the ranked model gem to allow for drag and drop sorting of db items
+gem 'ranked-model'
