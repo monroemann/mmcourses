@@ -18,14 +18,16 @@ class EnrollmentsController < ApplicationController
           description: 'MM Courses',
           currency: 'usd'
         )
-
+    end
         current_user.enrollments.create(course: current_course)
         redirect_to course_path(current_course)
         rescue Stripe::CardError => e
           flash[:error] = e.message
           redirect_to root_path
-    end
-
+    		
+    
+	end
+  
   private
     
   def current_course
