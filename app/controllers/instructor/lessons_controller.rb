@@ -19,13 +19,14 @@ end
 
 private
 
-def current_lesson
-	@current_lesson ||= Lesson.find(params[:id])
+def require_authorized_for_current_lesson
+	if current_lesson.section.course.user != current_user
+		render text: ‘Unauthorized’, status: :unauthorized
+	end
 end
 
-helper_method :current_section
-def current_section
-	@current_section ||= Section.find(params[:section_id])
+def current_lesson
+	@current_lesson ||= Lesson.find(params[:id])
 end
 
 def require_authorized_for_current_section
@@ -34,12 +35,10 @@ def require_authorized_for_current_section
   end
 end
 
-def require_authorized_for_current_lesson
-	if current_lesson.ssection.course.user != current_user
-		render text: ‘Unauthorized’, status: :unauthorized
-	end
+helper_method :current_section
+def current_section
+	@current_section ||= Section.find(params[:section_id])
 end
-
 
 
 def lesson_params
