@@ -21,7 +21,7 @@ private
 
 def require_authorized_for_current_lesson
 	if current_lesson.section.course.user != current_user
-		render text: ‘Unauthorized’, status: :unauthorized
+		render text: 'Unauthorized', status: :unauthorized
 	end
 end
 
