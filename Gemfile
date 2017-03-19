@@ -82,5 +82,8 @@ gem 'stripe'
 #Adding the ranked model gem to allow for drag and drop sorting of db items
 gem 'ranked-model'
 
-#Addomg the jquery ui gem
+#Adding the jquery ui gem
 gem 'jquery-ui-rails'
+
+#Adding FontAwesome gem
+gem 'font-awesome-rails'
