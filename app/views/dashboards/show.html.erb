@@ -11,10 +11,10 @@
 <br>
 
 <div class = "row">
-	<div class ="col-12 col-sm-8 text-center">
+	<div class ="col-12 text-center">
 	<%= course.description %>
 	</div>
-	<div class="col-12 col-sm-8 text-center">
+	<div class="col-12 text-center">
 		<%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
 		<br><br><br>
 	</div>
@@ -34,10 +34,10 @@
     <%= image_tag course.image, class: 'img-fluid' %>
 
     <div class = "row">
-			<div class ="col-12 col-sm-8 text-center">
+			<div class ="col-12 text-center">
 		    <%= course.description %>
 		  </div>
-		  <div class ="col-12 col-sm-8 text-center">
+		  <div class ="col-12 text-center">
 				<%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
 			</div>
 		</div>
